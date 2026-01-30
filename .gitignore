@@ -1,0 +1,17 @@
+# secrets
+.swimctl_env
+.flight_env
+*.pem
+*.key
+*.p12
+*.jks
+*.crt
+
+# local markers/logs
+.swimctl_last_success
+*.log
+
+# python/venv
+swimctl-venv/
+__pycache__/
+*.pyc

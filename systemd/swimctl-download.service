@@ -1,0 +1,15 @@
+[Unit]
+Description=SWIM Downloader / Ingest
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bmacdonald3
+WorkingDirectory=/home/bmacdonald3
+ExecStart=/usr/local/bin/swimctl_download.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

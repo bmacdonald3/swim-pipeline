@@ -1,0 +1,17 @@
+[Unit]
+Description=SWIM Receiver Control + Metrics API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=bmacdonald3
+WorkingDirectory=/home/bmacdonald3
+Environment=JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+EnvironmentFile=/home/bmacdonald3/.flight_env
+ExecStart=/home/bmacdonald3/swimctl-venv/bin/python /usr/local/bin/swimctl_http.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

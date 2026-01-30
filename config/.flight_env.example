@@ -1,0 +1,3 @@
+# Example: values used by swimctl-http service (NO REAL SECRETS HERE)
+# Add keys that exist in your real /home/bmacdonald3/.flight_env
+EXAMPLE_KEY=REPLACE_ME
