@@ -15,3 +15,8 @@
 swimctl-venv/
 __pycache__/
 *.pyc
+
+# secrets / local-only
+*.save
+config/.swimctl_env
+config/.flight_env
